@@ -1,0 +1,32 @@
+
+    Dataset Description: Smart Irrigation System
+    ============================================
+    
+    This dataset contains synthetic agricultural and weather data for irrigation prediction.
+    
+    Fields:
+    -------
+    1. Date: Date of observation
+    2. Crop_Type: Type of crop (Wheat, Rice, Cotton, Maize, Sugarcane)
+    3. Soil_Type: Type of soil (Clay, Sandy, Loamy, Silt)
+    4. Temperature_C: Temperature in Celsius (15-45°C)
+    5. Humidity_Percent: Relative humidity (20-90%)
+    6. Rainfall_mm: Rainfall in millimeters (0-100mm)
+    7. Soil_Moisture_Percent: Soil moisture level (5-50%)
+    8. Irrigation_Needed_Liters: Target variable - Water needed for irrigation (0-80 liters)
+    
+    Data Generation Logic:
+    ----------------------
+    - Base water requirement varies by crop type
+    - Temperature increases water need
+    - Higher humidity reduces water need
+    - Recent rainfall reduces irrigation requirement
+    - Low soil moisture increases water need
+    - Soil type affects moisture retention
+    
+    Use Case:
+    ---------
+    This data is used to train an ML model to predict optimal irrigation amounts
+    based on environmental conditions and crop requirements, promoting water conservation
+    and sustainable agriculture practices.
+    
